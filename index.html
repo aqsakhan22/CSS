@@ -1,0 +1,121 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    header{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("images/back.jpg");
+       
+        background-repeat:no-repeat;
+       height: 100vh;
+background-size: cover;
+background-position: center;
+       
+    }
+    ul{
+        float: right;
+        list-style-type: none;/*yay dot hatadyga*/
+        margin-top:20px;
+       
+    }
+
+    ul li{
+        display:inline-block; /*yay horizontal may ly ayga*/
+    }
+    ul li a{
+        text-decoration: none;
+        color:tomato;
+        transition: 0.6s ease;
+        padding:5px 20px;
+        border: 2px solid transparent;
+    }
+    ul li a:hover{
+        background-color:burlywood;
+        color:crimson;
+
+    }
+    .logo img{
+        float: left;
+        width:150px;
+        height:auto;
+        border: 2px solid white;
+      margin-top: 3px;
+      
+    }
+    .main{
+        max-width: 1200px;
+       margin:auto;
+    }
+    ul li.active a{
+        background-color:indigo;
+        color:tomato;
+    }
+    .title{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+     
+    }
+    .title h1{
+        color:tomato;
+        font-size: 50px;
+    }
+    .button{
+        position:absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .btn{
+        text-decoration: none;
+        border:1px solid white;
+      
+        padding: 10px 30px;
+        color:indigo;
+        transition: 0.6s ease;
+    }
+    .btn:hover{
+        background-color:burlywood;
+        color:crimson;
+    }
+    </style>
+</head>
+<body>
+    <header>
+
+ <div class="main">
+<!-- <div class="logo">
+<img src="images/icon.png"/>
+</div> -->
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+ </div>
+<div class="title">
+
+    <h1>Online Institute GuideLne</h1>
+</div>
+<div class="button">
+
+    <a href="#" class="btn">GET STARTED</a>
+    <a href="#" class="btn">FOR MORE DETAIL</a>
+</div>
+    </header>
+</body>
+</html>
